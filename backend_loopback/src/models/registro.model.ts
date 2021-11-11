@@ -33,6 +33,15 @@ export class Registro extends Entity {
   })
   registro_historial: string;
 
+  @property({
+    type: 'string',
+  })
+  estudianteId?: string;
+
+  @property({
+    type: 'string',
+  })
+  profesorId?: string;
 
   constructor(data?: Partial<Registro>) {
     super(data);
